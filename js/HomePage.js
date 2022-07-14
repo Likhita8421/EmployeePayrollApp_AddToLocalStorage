@@ -22,8 +22,8 @@ const createInnerHtml = () => {
         <td>450000</td>
         <td>14 May 2022</td>
         <td>
-            <img id="1" onclick="remove(this)" alt="delete" src="..\assets\delete button.jpg">
-            <img id="1" onclick="update(this)" alt="edit" src="..\assets\write button.jpg">
+            <img id="1" onclick="remove(this)" alt="delete" src="..\assets\deletebutton.jpg">
+            <img id="1" onclick="update(this)" alt="edit" src="..\assets\Editbutton.jpg">
         </td>
     </tr>
     `;
