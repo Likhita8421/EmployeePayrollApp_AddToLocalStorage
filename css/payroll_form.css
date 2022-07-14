@@ -1,13 +1,12 @@
 /* UC 1 */
-body {
+html body {
     margin: 0;
     height: 50%;
-    background-color: whitesmoke;
 }
 
 .header {
     padding: 15px 0;
-    background-color: whitesmoke;
+    background-color:#ffffff ;
 }
 
 .header-content {
