@@ -1,8 +1,7 @@
 
-//UC1-Employee Payroll Class With New Attributes
+//uc1-Employee Payroll Class With New Attributes
 
 class EmployeePayrollData {
-
 
     //getter and setter method
     get id() {return this._id; }
@@ -59,3 +58,6 @@ class EmployeePayrollData {
 
     }
 }
+
+
+
