@@ -1,67 +1,74 @@
-/* UC 1 */
-html body {
+/*--------- UC 1 adding logo------------------*/
+body{
     margin: 0;
-    height: 50%;
+    height: 100%;
+   
 }
 
-.header {
+.header{
     padding: 15px 0;
-    background-color:#ffffff ;
+    background-color:rgb(9, 9, 100);
 }
 
-.header-content {
+.header-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+    border: 0px grey;
 }
 
-.logo-content {
+.logo-content{
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 0px solid green;
-    width: 80%;
+    width:80%;
 }
 
-.logo-content-img { border: solid px #42515f; }
+.logo-content img{
+    width: 50px;
+    height: 50px;
+    border: solid 0px #42515f;
+}
 
-.emp-text {
+.emp-text{
     font: normal normal bold 20px/25px Montserrat;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat",sans-serif;
     letter-spacing: 0px;
-    color: #82a70c;
-    text-transform: capitalize;
+    color:#82a70c;
+    text-transform:capitalize;
 }
-.emp-payroll { color: #42515f ;}
 
-* { box-sizing: border-box; }
+.emp-payroll{
+    color: #7f8c98;
+}
 
-/* UC 2 */
+*{
+    box-sizing:border-box;
+}
 
-.form-content {
-    min-height: calc(100% - 80%);
-    background-color: #f7f7f7;
+/*------------------------ UC2 Form with Header and Name ---------------*/
+
+.form-content{
+    min-height: calc(100% - 80px);
+
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0px solid green;
+
 }
-    
-
-
-.form {
+.form{
     width: 65%;
     padding: 44px 60px;
-    background: #ffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #3e413d29;
+    background:white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #f5f5f5;
     border-radius: 8px;
     opacity: 1;
 }
-
-.form-head {
+.form-head{
     font: normal normal bold 24px/37px Roboto;
     letter-spacing: 0px;
     color: #42515f;
@@ -69,79 +76,69 @@ html body {
     opacity: 1;
     padding-bottom: 20px;
 }
-
-.row-content {
+.row-content{
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
     align-items: center;
     border: 0px solid green;
 }
-
-.label {
-    min-width: 140px;
+.label{
+    min-width: 150px;
 }
-
-.label {
+label{
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-
-.text {
+.text{
     font-size: 16px;
     color: #42515f;
     opacity: 1;
     font-family: Roboto;
 }
-
-.input {
+.input{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
 }
-
-/* UC 3 */
-.profile-radio-content {
+/*------------------------ UC3 Profile Pic to the Employee Payroll App---------------------- */
+.profile-radio-content{
     display: flex;
     flex-direction: row;
 }
-
-.profile-radio-content > label {
+.profile-radio-content > label{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
-.profile {
+.profile{
     width: 40px;
     border-radius: 50%;
     margin-left: 12px;
 }
-
-/* UC 5*/
-select {
+/*-------- UC5 Employee Payroll Form with Start Date -----------*/
+select{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-    font: normal normal normal 16px Roboto;
+    font: normal normal normal 16px roboto;
     letter-spacing: 0px;
     color: #42515f;
     background-color: transparent;
 }
-
-
-/* UC 6*/
-.buttonParent {
+/*----------UC6 Add notes and buttons & media queries-----------*/
+.buttonParent{
     display: flex;
     margin-bottom: 10px;
     justify-content: space-between;
     margin-top: 20px;
+   
 }
-
-.button {
+.button{
+   
     font-size: 20px;
     font-family: Roboto;
     letter-spacing: 0px;
@@ -155,85 +152,57 @@ select {
     border: 1px solid #707070;
     cursor: pointer;
 }
-
-.submitButton {
-    border: none;
-    background-color:  #f5f5f5;
+.submitButton{
+    border: 1px solid #707070;
     margin-right: 30px;
 }
-
-.cancelButton {
-    /* margin-left: 140px; */
+.cancelButton{
     text-decoration: none;
     text-align: center;
-}
 
-error-output {
-    margin-left: 10px;
+}
+.error-output {
     font-size: 12px;
-    font-style: italic;
+    font-style: inherit;
     color: red;
 }
-
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px){
     .cancelButton {
         margin-left: 0px;
     }
-
-    .form {
+    .form{
         width: 85%;
         padding: 44px 20px;
     }
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     .form{
         margin-top: 10px;
     }
-    
     .row {
         flex-direction: column;
     }
-
-    .uploadButton {
+    .uploadButton{
         justify-content: flex-start;
     }
-    
-    .profile-radio-button {
+    .profile-radio-content{
         flex-flow: wrap;
     }
-
     .submit-reset {
-        width: 100%;
-        display: flex;
-        flex-grow: 1;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-
-    .submitButton {
-        margin: 0;
-    }
-
-    .buttonParent {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+   
+   }
+   .submitButton {
+    margin: 0;
+   }
+   .buttonParent {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,14 +1,16 @@
-html body {
+
+/*----------------------- UC 1---------------------- */
+body{
     margin: 0;
-    height: 50%;
+    height: 100%;
 }
 
-.header {
-    padding: 15px 0; 
-    background-color:#ffffff ;
+.header{
+    padding: 15px 0;
+    background-color: #ffffff;
 }
 
-.header-content {
+.header-content{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -16,29 +18,34 @@ html body {
     border: 0px solid green;
 }
 
-.logo-content {
+.logo-content{
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 0px solid green;
-    width: 80%;
+    width:80%;
 }
 
-.logo-content-img { border: solid px #42515f; }
+.logo-content-img{
+    border: solid 0px #42515f;
+}
 
-.emp-text {
+.emp-text{
     font: normal normal bold 20px/25px Montserrat;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat",sans-serif;
     letter-spacing: 0px;
-    color: #82a70c;
-    text-transform: capitalize;
+    color:#82a70c;
+    text-transform:capitalize;
 }
-.emp-payroll { color: #42515f ;}
 
-* { box-sizing: border-box; }
+.emp-payroll{
+    color: #42515f;
+}
 
-
-/* UC-2 */
+*{
+    box-sizing:border-box;
+}
+/*---------------------------uc2-------------------------------*/
 .main-content {
     display: flex;
     flex-direction: column;
@@ -88,10 +95,7 @@ html body {
     cursor: pointer;
     text-decoration: none;
 }
-
-
-/* uc3 */
-
+/*--------------------uc3---------------------------*/
 .table-main {
     width: 80%;
     margin: 0 auto;
@@ -108,7 +112,7 @@ td, th {
     padding: 5px 8px;
 }
 th {
-    background: #4b4f52 0% 0% no-repeat padding-box;
+    background: #76797b 0% 0% no-repeat padding-box;
     border-radius: 3px 3px 0px 0px;
     text-align: left;
     font: normal normal normal 22px/29px Roboto;
@@ -118,7 +122,6 @@ th {
     opacity: 1;
     border: 0px solid #dddddd;
 }
-
 tr:not(:first-child){
     background: white;
     border: 2px solid gray;
@@ -144,7 +147,7 @@ td img{
     cursor: pointer;
 }
 .dept-label{
-    background: rgb(202, 239, 141);
+    background: skyblue;
     border-radius: 40px;
     width: fit-content;
     padding: 1px 7px;
@@ -154,10 +157,3 @@ td img{
     font-weight: 300;
     margin-bottom: 8px;
 }
-
-
-
-
-
-
-
